@@ -18,15 +18,15 @@ var view = (function () {
         }
 
         var exibirLinkedin = function (bolean) {
-            bolean ? console.log("https://www.linkedin.com/in/jorgehenriqueaf/") : null;  
+            if (bolean) console.log("https://www.linkedin.com/in/jorgehenriqueaf/"); 
         }
 
         var exibirGitHub = function (bolean) {
-            bolean ? console.log("https://github.com/jorgehaf") : null;  
+            if (bolean) console.log("https://github.com/jorgehaf");
         }
 
         var exibirInstagram = function (bolean) {
-            bolean ? console.log("https://www.instagram.com/jorgehaf/") : null;  
+            if (bolean) console.log("https://www.instagram.com/jorgehaf/");
         }
 
         return {

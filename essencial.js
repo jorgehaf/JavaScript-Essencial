@@ -1,14 +1,14 @@
-// Linha   25    -> Arrays - Atribuição via desestrururação
-// Linha   54    -> Objetos - Atribuição via desestrururação
-// Linha   74    -> Funções
+// Linha    25   -> Arrays - Atribuição via desestruturação
+// Linha    54   -> Objetos - Atribuição via desestruturação
+// Linha    74   -> Funções
 // Linha   108   -> Array filter
 // Linha   158   -> Array map
 // Linha   192   -> Array reduce
 // Linha   235   -> Filter + Map + Reduce
 // Linha   245   -> for of, for in, forEach
 // Linha   261   -> Classes e prototype
-// Linha         ->
-// Linha         ->
+// Linha   289   -> Métodos estáticos
+// Linha   315   -> Promises
 // Linha         ->
 // Linha         ->
 // Linha         ->
@@ -283,5 +283,58 @@ var classesAndPrototype = function () {
     }
 
     let pessoa2 = new Pessoa2('Jorge', 'Henrique');
+
+}
+
+// Métodos estáticos
+var metodosEstaticos = function () {
+    class ControleRemoto {
+        constructor(tv) {
+            this.tv = tv;
+            this.volume = 0;
+        }
+        aumentarVolume() {
+            this.volume += 2;
+        }
+        diminuirVolume() {
+            this.volume -= 2;
+        }
+
+        static trocarPilha() {
+            console.log('Pilhas trocadas.');
+        }
+    }
+
+    let controle1 = new ControleRemoto('LG')
+    controle1.aumentarVolume();
+
+    ControleRemoto.trocarPilha();
+
+}
+
+// Promises
+var promises = function () {
+
+    function aguarde(mensagem, tempo) {
+        return new Promise((resolve, reject) => {
+            if (typeof mensagem !== 'string') reject('Erro.')
+
+            setTimeout(() => {
+                resolve(mensagem);
+            }, tempo)
+        });
+    }
+
+    aguarde('Lorem ipsum', 1000)
+        .then(msg => {
+            console.log(msg)
+            return aguarde('Lorem ipsum 2', 2000)
+        })
+        .then(msg => {
+            console.log(msg)
+        })
+        .catch(erro => {
+            console.log(erro)
+        });
 
 }
