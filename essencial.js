@@ -9,8 +9,8 @@
 // Linha   261   -> Classes e prototype
 // Linha   289   -> Métodos estáticos
 // Linha   315   -> Promises
-// Linha         ->
-// Linha         ->
+// Linha   345   -> Métodos para promises
+// Linha   405   -> Async / Await
 // Linha         ->
 // Linha         ->
 // Linha         ->
@@ -317,9 +317,12 @@ var promises = function () {
 
     function aguarde(mensagem, tempo) {
         return new Promise((resolve, reject) => {
-            if (typeof mensagem !== 'string') reject('Erro.')
-
             setTimeout(() => {
+                if (typeof mensagem !== 'string') {
+                    reject('Erro.')
+                    return;
+                }
+
                 resolve(mensagem);
             }, tempo)
         });
@@ -336,5 +339,100 @@ var promises = function () {
         .catch(erro => {
             console.log(erro)
         });
+
+}
+
+// Métodos para promises
+var metodosParaPromises = function () {
+
+    function aguarde(mensagem, tempo) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (typeof mensagem !== 'string') {
+                    reject('Erro.')
+                    return;
+                }
+
+                resolve(mensagem + ' promise!');
+            }, tempo)
+        });
+    }
+
+    let arrayPromises = [
+        aguarde('1°', 3000),
+        aguarde('2°', 1000),
+        aguarde('3°', 100),
+        aguarde('4°', 2000),
+    ];
+
+    // Retornará todas as promises resolvidas
+    Promise.all(arrayPromises)
+        .then(function (valor) {
+            console.log(valor);
+        })
+        .catch(function (erro) {
+            console.log(erro)
+        });
+
+    // Retornará a primeira promise resolvida
+    Promise.race(arrayPromises)
+        .then(function (valor) {
+            console.log(valor);
+        })
+        .catch(function (erro) {
+            console.log(erro)
+        });
+
+
+    function baixarPagina() {
+        let cache = true;
+
+        if (cache) {
+            return Promise.resolve('Página carregada!')
+        } else {
+            return aguarde('Baixando página', 3000)
+        }
+    }
+
+    baixarPagina()
+        .then(pagina => {
+            console.log(pagina);
+        })
+        .catch(erro => console.log(erro))
+
+}
+
+// Async / Await
+var asyncAwait = function () {
+
+    function aguarde(mensagem, tempo) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (typeof mensagem !== 'string') {
+                    reject('Erro.')
+                    return;
+                }
+
+                resolve(mensagem + ' promise!');
+            }, tempo)
+        });
+    }
+
+    async function exec() {
+        try {
+            let promise1 = await aguarde('1°', 2000);
+            console.log(promise1);
+
+            let promise2 = await aguarde(2, 200);
+            console.log(promise2);
+
+            let promise3 = await aguarde('3°', 5000);
+            console.log(promise3);
+        } catch (erro) {
+            console.log(erro)
+        } finally {
+            console.log('Fim')
+        }
+    }
 
 }
