@@ -1,0 +1,470 @@
+[
+  {
+      "estaAtivo": false,
+      "salario": "$1,795.05",
+      "idade": 31,
+      "nome": "Rebekah Rasmussen",
+      "genero": "female",
+      "empresa": "QUILK",
+      "email": "rebekahrasmussen@quilk.com",
+      "celular": "+1 (818) 529-2083",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Townsend Frye"
+        },
+        {
+          "id": 1,
+          "nome": "Gross Weber"
+        },
+        {
+          "id": 2,
+          "nome": "Gibbs Walsh"
+        }
+      ],
+      "saudacoes": "Olá, Rebekah Rasmussen! Você tem 5 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$1,753.93",
+      "idade": 37,
+      "nome": "Greer Barnett",
+      "genero": "male",
+      "empresa": "FIBRODYNE",
+      "email": "greerbarnett@fibrodyne.com",
+      "celular": "+1 (846) 439-3370",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Hartman Meyer"
+        },
+        {
+          "id": 1,
+          "nome": "Delores Huffman"
+        },
+        {
+          "id": 2,
+          "nome": "Nguyen Scott"
+        }
+      ],
+      "saudacoes": "Olá, Greer Barnett! Você tem 5 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$2,624.91",
+      "idade": 39,
+      "nome": "Joy Jones",
+      "genero": "female",
+      "empresa": "ZOINAGE",
+      "email": "joyjones@zoinage.com",
+      "celular": "+1 (850) 557-3642",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Saunders Bradshaw"
+        },
+        {
+          "id": 1,
+          "nome": "Franco Peters"
+        },
+        {
+          "id": 2,
+          "nome": "Higgins Hubbard"
+        }
+      ],
+      "saudacoes": "Olá, Joy Jones! Você tem 7 mensagens não lidas.",
+      "frutaFavorita": "strawberry"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$2,419.92",
+      "idade": 33,
+      "nome": "Diann Gill",
+      "genero": "female",
+      "empresa": "XLEEN",
+      "email": "dianngill@xleen.com",
+      "celular": "+1 (868) 587-2980",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "April Velasquez"
+        },
+        {
+          "id": 1,
+          "nome": "Erickson Frost"
+        },
+        {
+          "id": 2,
+          "nome": "Lorrie Sparks"
+        }
+      ],
+      "saudacoes": "Olá, Diann Gill! Você tem 9 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$3,487.25",
+      "idade": 25,
+      "nome": "Pickett Howard",
+      "genero": "male",
+      "empresa": "NIQUENT",
+      "email": "picketthoward@niquent.com",
+      "celular": "+1 (954) 585-3980",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Aguirre Mccoy"
+        },
+        {
+          "id": 1,
+          "nome": "Jacklyn House"
+        },
+        {
+          "id": 2,
+          "nome": "Carrie Townsend"
+        }
+      ],
+      "saudacoes": "Olá, Pickett Howard! Você tem 8 mensagens não lidas.",
+      "frutaFavorita": "strawberry"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$3,786.77",
+      "idade": 23,
+      "nome": "Chavez Jennings",
+      "genero": "male",
+      "empresa": "NUTRALAB",
+      "email": "chavezjennings@nutralab.com",
+      "celular": "+1 (947) 504-2497",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Kline Walter"
+        },
+        {
+          "id": 1,
+          "nome": "Opal Blake"
+        },
+        {
+          "id": 2,
+          "nome": "Mcclure Bird"
+        }
+      ],
+      "saudacoes": "Olá, Chavez Jennings! Você tem 6 mensagens não lidas.",
+      "frutaFavorita": "strawberry"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$3,853.18",
+      "idade": 27,
+      "nome": "Oneill Schroeder",
+      "genero": "male",
+      "empresa": "GEEKFARM",
+      "email": "oneillschroeder@geekfarm.com",
+      "celular": "+1 (826) 535-3445",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Velez George"
+        },
+        {
+          "id": 1,
+          "nome": "Frye Finch"
+        },
+        {
+          "id": 2,
+          "nome": "Deena Parks"
+        }
+      ],
+      "saudacoes": "Olá, Oneill Schroeder! Você tem 9 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$1,767.75",
+      "idade": 35,
+      "nome": "Vincent Maddox",
+      "genero": "male",
+      "empresa": "CEPRENE",
+      "email": "vincentmaddox@ceprene.com",
+      "celular": "+1 (942) 446-2446",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Mccoy Horn"
+        },
+        {
+          "id": 1,
+          "nome": "Lilia Davidson"
+        },
+        {
+          "id": 2,
+          "nome": "Lynette Hill"
+        }
+      ],
+      "saudacoes": "Olá, Vincent Maddox! Você tem 10 mensagens não lidas.",
+      "frutaFavorita": "apple"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$2,075.25",
+      "idade": 30,
+      "nome": "Gail Ratliff",
+      "genero": "female",
+      "empresa": "CYTREK",
+      "email": "gailratliff@cytrek.com",
+      "celular": "+1 (887) 467-3953",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Case Obrien"
+        },
+        {
+          "id": 1,
+          "nome": "Cathy Sampson"
+        },
+        {
+          "id": 2,
+          "nome": "Rosemarie Reyes"
+        }
+      ],
+      "saudacoes": "Olá, Gail Ratliff! Você tem 2 mensagens não lidas.",
+      "frutaFavorita": "strawberry"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$3,148.05",
+      "idade": 33,
+      "nome": "Perkins Roth",
+      "genero": "male",
+      "empresa": "MOBILDATA",
+      "email": "perkinsroth@mobildata.com",
+      "celular": "+1 (896) 521-2761",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Lea Jensen"
+        },
+        {
+          "id": 1,
+          "nome": "Emilia Thomas"
+        },
+        {
+          "id": 2,
+          "nome": "Jessica Summers"
+        }
+      ],
+      "saudacoes": "Olá, Perkins Roth! Você tem 1 mensagens não lidas.",
+      "frutaFavorita": "strawberry"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$2,043.57",
+      "idade": 23,
+      "nome": "Grant Osborne",
+      "genero": "male",
+      "empresa": "FROSNEX",
+      "email": "grantosborne@frosnex.com",
+      "celular": "+1 (803) 575-3233",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Albert Montoya"
+        },
+        {
+          "id": 1,
+          "nome": "Gilliam Flowers"
+        },
+        {
+          "id": 2,
+          "nome": "Woodard Richard"
+        }
+      ],
+      "saudacoes": "Olá, Grant Osborne! Você tem 5 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$3,354.79",
+      "idade": 29,
+      "nome": "Elsa Salazar",
+      "genero": "female",
+      "empresa": "KRAG",
+      "email": "elsasalazar@krag.com",
+      "celular": "+1 (968) 531-3550",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Wall Hall"
+        },
+        {
+          "id": 1,
+          "nome": "Gordon Valenzuela"
+        },
+        {
+          "id": 2,
+          "nome": "Merle Shannon"
+        }
+      ],
+      "saudacoes": "Olá, Elsa Salazar! Você tem 1 mensagens não lidas.",
+      "frutaFavorita": "apple"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$2,685.33",
+      "idade": 21,
+      "nome": "Veronica Orr",
+      "genero": "female",
+      "empresa": "CORMORAN",
+      "email": "veronicaorr@cormoran.com",
+      "celular": "+1 (991) 401-2416",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Helene Osborn"
+        },
+        {
+          "id": 1,
+          "nome": "Stacy Nixon"
+        },
+        {
+          "id": 2,
+          "nome": "Catherine Ellis"
+        }
+      ],
+      "saudacoes": "Olá, Veronica Orr! Você tem 6 mensagens não lidas.",
+      "frutaFavorita": "strawberry"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$3,337.32",
+      "idade": 28,
+      "nome": "Marjorie Moody",
+      "genero": "female",
+      "empresa": "GYNK",
+      "email": "marjoriemoody@gynk.com",
+      "celular": "+1 (815) 581-3164",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Nolan Adams"
+        },
+        {
+          "id": 1,
+          "nome": "Ella Irwin"
+        },
+        {
+          "id": 2,
+          "nome": "Desiree Raymond"
+        }
+      ],
+      "saudacoes": "Olá, Marjorie Moody! Você tem 5 mensagens não lidas.",
+      "frutaFavorita": "apple"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$3,947.08",
+      "idade": 23,
+      "nome": "Rivers Tran",
+      "genero": "male",
+      "empresa": "HYPLEX",
+      "email": "riverstran@hyplex.com",
+      "celular": "+1 (832) 572-3100",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Ericka Padilla"
+        },
+        {
+          "id": 1,
+          "nome": "Lindsay Albert"
+        },
+        {
+          "id": 2,
+          "nome": "Regina Sims"
+        }
+      ],
+      "saudacoes": "Olá, Rivers Tran! Você tem 2 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$3,711.17",
+      "idade": 26,
+      "nome": "Ayala Juarez",
+      "genero": "male",
+      "empresa": "SLUMBERIA",
+      "email": "ayalajuarez@slumberia.com",
+      "celular": "+1 (898) 580-2402",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Stout Acosta"
+        },
+        {
+          "id": 1,
+          "nome": "Figueroa Hendricks"
+        },
+        {
+          "id": 2,
+          "nome": "Roseann Mccormick"
+        }
+      ],
+      "saudacoes": "Olá, Ayala Juarez! Você tem 10 mensagens não lidas.",
+      "frutaFavorita": "banana"
+  },
+  {
+      "estaAtivo": true,
+      "salario": "$2,048.87",
+      "idade": 31,
+      "nome": "Burks Powell",
+      "genero": "male",
+      "empresa": "INSOURCE",
+      "email": "burkspowell@insource.com",
+      "celular": "+1 (850) 534-3321",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Joseph Whitney"
+        },
+        {
+          "id": 1,
+          "nome": "Frazier Mcintosh"
+        },
+        {
+          "id": 2,
+          "nome": "Jerry Ford"
+        }
+      ],
+      "saudacoes": "Olá, Burks Powell! Você tem 2 mensagens não lidas.",
+      "frutaFavorita": "apple"
+  },
+  {
+      "estaAtivo": false,
+      "salario": "$1,692.66",
+      "idade": 38,
+      "nome": "Strickland Cleveland",
+      "genero": "male",
+      "empresa": "SOPRANO",
+      "email": "stricklandcleveland@soprano.com",
+      "celular": "+1 (811) 482-2310",
+      "amigos": [
+        {
+          "id": 0,
+          "nome": "Bender Odom"
+        },
+        {
+          "id": 1,
+          "nome": "Blackwell Allen"
+        },
+        {
+          "id": 2,
+          "nome": "Brittney Fisher"
+        }
+      ],
+      "saudacoes": "Olá, Strickland Cleveland! Você tem 4 mensagens não lidas.",
+      "frutaFavorita": "apple"
+  }
+]
