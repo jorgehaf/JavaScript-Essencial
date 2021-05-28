@@ -11,8 +11,8 @@
 // Linha   315   -> Promises
 // Linha   345   -> Métodos para promises
 // Linha   405   -> Async / Await
-// Linha         ->
-// Linha         ->
+// Linha   440   -> Fetch API
+// Linha   475   -> Fetch API e Axios
 // Linha         ->
 // Linha         ->
 // Linha         ->
@@ -46,7 +46,7 @@ var arrayAtribuicaoViaDesestruturacao = function () {
         [70, 80, 90]
     ];
     let [lista1, , [, , noventa]] = arrayNumeros;
-}
+};
 
 // Objetos - Atribuição via desestrururação
 var objetosAtribuicaoViaDesestruturacao = function () {
@@ -69,7 +69,7 @@ var objetosAtribuicaoViaDesestruturacao = function () {
         }
     } = pessoa;
     console.log(nome, nome2, sobrenome, numero);
-}
+};
 
 // Funções
 var funcoes = function () {
@@ -103,7 +103,7 @@ var funcoes = function () {
     objeto.bio()
     objeto.arrayNome[0]()
 
-}
+};
 
 // Array filter
 var arrayFilter = function () {
@@ -153,7 +153,7 @@ var arrayFilter = function () {
 
     let exemplo4 = pessoas.filter(obj => obj.nome.startsWith('J'));
 
-}
+};
 
 // Array map
 var arrayMap = function () {
@@ -187,7 +187,7 @@ var arrayMap = function () {
         return newObj;
     });
 
-}
+};
 
 // Array reduce
 var arrayReduce = function () {
@@ -230,7 +230,7 @@ var arrayReduce = function () {
         return valor;
     });
 
-}
+};
 
 // Filter + Map + Reduce
 var filterMapReduce = function () {
@@ -240,7 +240,7 @@ var filterMapReduce = function () {
         .filter(valor => valor % 2 === 0)
         .map(valor => valor * 2)
         .reduce((acumulador, valor) => acumulador + valor);
-}
+};
 
 // for of, for in, forEach
 var forOfForInForEach = function () {
@@ -256,7 +256,7 @@ var forOfForInForEach = function () {
     let total = 0;
     numeros.forEach((valor, indice, array) => total += valor);
 
-}
+};
 
 // Classes e prototype
 var classesAndPrototype = function () {
@@ -284,7 +284,7 @@ var classesAndPrototype = function () {
 
     let pessoa2 = new Pessoa2('Jorge', 'Henrique');
 
-}
+};
 
 // Métodos estáticos
 var metodosEstaticos = function () {
@@ -310,7 +310,7 @@ var metodosEstaticos = function () {
 
     ControleRemoto.trocarPilha();
 
-}
+};
 
 // Promises
 var promises = function () {
@@ -340,7 +340,7 @@ var promises = function () {
             console.log(erro)
         });
 
-}
+};
 
 // Métodos para promises
 var metodosParaPromises = function () {
@@ -400,7 +400,7 @@ var metodosParaPromises = function () {
         })
         .catch(erro => console.log(erro))
 
-}
+};
 
 // Async / Await
 var asyncAwait = function () {
@@ -435,4 +435,82 @@ var asyncAwait = function () {
         }
     }
 
+};
+
+// Fetch API
+var fetchAPI = function () {
+    document.addEventListener('click', e => {
+        let el = e.target;
+        let tag = el.tagName.toLowerCase();
+
+        if (tag === 'a') {
+            e.preventDefault();
+            carregaPagina(el);
+        }
+    })
+
+    async function carregaPagina(pg) {
+        try {
+            let href = pg.getAttribute('href');
+            let resposta = await fetch(href);
+
+            if (resposta.status !== 200) throw new Error('Erro cabuloso!');
+
+            let html = await resposta.text();
+            carregaResultado(html);
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    function carregaResultado(resposta) {
+        let resultado = document.querySelector('#main');
+        resultado.innerHTML = resposta;
+    }
+
+};
+fetchAPI();
+
+// Fetch API e Axios
+var fetchApiAxios = function () {
+    /* fetch('pessoas.json')
+        .then(resposta => resposta.json())
+        .then(json => carregaElementos(json)); */
+
+    axios('pessoas.json')
+        .then(resposta => carregaElementos(resposta.data));
+
+
+    function carregaElementos(retorno) {
+        let table = document.createElement('table');
+
+        for (let pessoa of retorno) {
+            let tr = document.createElement('tr');
+
+            let td1 = document.createElement('td');
+            td1.innerHTML = pessoa.nome;
+            tr.appendChild(td1);
+
+            let td2 = document.createElement('td');
+            td2.innerHTML = pessoa.idade;
+            tr.appendChild(td2);
+
+            let td3 = document.createElement('td');
+            td3.innerHTML = pessoa.salario;
+            tr.appendChild(td3);
+
+            td2.style.paddingLeft = '20px';
+            td3.style.paddingLeft = '20px';
+
+            table.appendChild(tr);
+        }
+
+        const resultado = document.querySelector('.resultado');
+        resultado.appendChild(table)
+    }
+
+
+
 }
+fetchApiAxios();
